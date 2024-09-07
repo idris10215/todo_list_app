@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007BFF;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .task-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .task-container.done {
+    text-decoration: line-through;
+    color: grey;
+  }
+
+  .delete-icon {
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .delete-icon:hover {
+    color: darkred;
+  }
+
+  
+  @media (max-width: 576px) {
+    .container {
+      padding: 15px;
+    }
+
+    .task-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .delete-icon {
+      position: static;
+      margin-top: 5px;
+    }
+}
